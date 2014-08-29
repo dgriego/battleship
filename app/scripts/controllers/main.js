@@ -9,9 +9,8 @@
  */
 angular.module('battleshipApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.board = {
+        o : '<td>o</td>',
+        hit : '<td>x</td>'
+    };
   });
